@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style>
+      /* Style the video background */
+      #bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+      }
+
+      /* Style the photo gallery */
+      .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .photo-gallery img {
+        width: calc(20% - 10px);
+        height: auto;
+        margin: 10px; /* add this line to increase the space between the images */
+        border-radius: 10px;
+      }
+
+      /* Media queries */
+      @media (max-width: 600px) {
+        .photo-gallery img {
+          width: calc(50% - 20px);
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 1000px) {
+        .photo-gallery img {
+          width: calc(33.333% - 15px);
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add a video background -->
+    <video id="bg-video" autoplay loop muted>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Add a photo gallery -->
+    <div class="photo-gallery">
+      <img src="photo.png" alt="Photo 1">
+      <img src="photo.png" alt="Photo 2">
+      <img src="photo.png" alt="Photo 3">
+      <img src="photo.png" alt="Photo 4">
+      <img src="photo.png" alt="Photo 5">
+      <img src="photo.png" alt="Photo 6">
+      <img src="photo.png" alt="Photo 7">
+      <img src="photo.png" alt="Photo 8">
+      <img src="photo.png" alt="Photo 9">
+      <img src="photo.png" alt="Photo 10">
+      <img src="photo.png" alt="Photo 11">
+      <img src="photo.png" alt="Photo 12">
+      <img src="photo.png" alt="Photo 13">
+      <img src="photo.png" alt="Photo 14">
+      <img src="photo.png" alt="Photo 15">
+      <img src="photo.png" alt="Photo 16">
+      <img src="photo.png" alt="Photo 17">
+      <img src="photo.png" alt="Photo 18">
+      <img src="photo.png" alt="Photo 19">
+      <img src="photo.png" alt="Photo 20">
+    </div>
+  </body>
+</html>
